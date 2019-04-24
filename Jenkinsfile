@@ -7,7 +7,8 @@ node {
             echo 'I execute elsewhere'
         }
         echo "Test message"
-        echo "${GIT_COMMIT}"
+        sh 'printenv'
+        //echo "${GIT_COMMIT}"
         // echo "${GIT_PREVIOUS_COMMIT}"
         // echo "${env.GIT_BRANCH}"
         // echo "${GIT_URL}"
