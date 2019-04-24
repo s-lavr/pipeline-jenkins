@@ -1,5 +1,6 @@
 node {
     stage('Example') {
+        git "https://github.com/s-lavr/pipeline-jenkins.git"
         if (env.BRANCH_NAME == 'master') {
             echo 'I only execute on the master branch'
         } else {
