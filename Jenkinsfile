@@ -6,10 +6,10 @@ node {
             echo 'I execute elsewhere'
         }
         echo "Test message"
-        echo "$GIT_COMMIT"
-        echo "$GIT_PREVIOUS_COMMIT"
-        echo "$GIT_BRANCH"
-        echo "$GIT_URL"
+        echo "${GIT_COMMIT}"
+        echo "${GIT_PREVIOUS_COMMIT}"
+        echo "${GIT_BRANCH}"
+        echo "${GIT_URL}"
 
     }
 }
