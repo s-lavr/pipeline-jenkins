@@ -5,5 +5,6 @@ node {
         } else {
             echo 'I execute elsewhere'
         }
+        sh 'echo "Test"'
     }
 }
