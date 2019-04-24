@@ -5,6 +5,11 @@ node {
         } else {
             echo 'I execute elsewhere'
         }
-        sh 'echo "Test message"'
+        echo "Test message"
+        echo "$GIT_COMMIT"
+        echo "$GIT_PREVIOUS_COMMIT"
+        echo "$GIT_BRANCH"
+        echo "$GIT_URL"
+
     }
 }
