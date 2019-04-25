@@ -8,7 +8,7 @@ node {
         echo "Image tag is ${env.GIT_BRANCH}"
     }
     sh "git tag"
-    if (env.TAG_NAME!=Null){
+    if (env.TAG_NAME!=null){
     echo "Hello, Tag exists"
     }
     echo 'Test message 123'
