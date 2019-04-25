@@ -1,7 +1,8 @@
 node {
+    def scmVars = checkout scm
+    echo 'scm : the commit id is ' +scmVars.GIT_COMMIT
     stage('Example') {
-        def scmVars = checkout scm
-        echo 'scm : the commit id is ' +scmVars.GIT_COMMIT
+
         //git "https://github.com/s-lavr/pipeline-jenkins.git"
         if (env.BRANCH_NAME == 'master') {
             echo 'I only execute on the master branch'
