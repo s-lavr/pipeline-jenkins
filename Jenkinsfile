@@ -10,3 +10,5 @@ node {
         echo "Image tag is ${env.GIT_BRANCH}"
     }
 }
+
+}
