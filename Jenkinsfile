@@ -3,7 +3,7 @@ node {
     sh 'printenv'
     stage('Example') {
     if (env.GIT_BRANCH == 'master') {
-        echo "Image tag is ${env.GIT_BRANCH}-${env.GIT_COMMIT}""
+        echo "Image tag is ${env.GIT_BRANCH}-${env.GIT_COMMIT}"
     } else {
         echo "Image tag is ${env.GIT_BRANCH}"
     }
