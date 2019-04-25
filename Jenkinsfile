@@ -10,6 +10,7 @@ node {
     when { tag "*" }
     echo 'Test message'
     }
+    }
 }
 
 
