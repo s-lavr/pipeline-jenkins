@@ -1,6 +1,6 @@
 node {
     def scmVars = checkout scm
-    echo '$scmVars'
+    println(“Hello World”);
     stage('Example') {
 
         //git "https://github.com/s-lavr/pipeline-jenkins.git"
