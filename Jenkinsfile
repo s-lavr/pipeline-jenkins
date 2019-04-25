@@ -10,7 +10,7 @@ node {
             echo 'I execute elsewhere'
         }
 
-        echo "Test message for Jenkins"
+        echo "Test message for Jenkins!"
         sh 'printenv'
         echo "${env.GIT_COMMIT}"
         // echo "${GIT_PREVIOUS_COMMIT}"
