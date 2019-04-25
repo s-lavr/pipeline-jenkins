@@ -12,7 +12,7 @@ node {
 
         echo "Test message for Jenkins!"
         sh 'printenv'
-        echo "${env.GIT_COMMIT}"
+        echo env.GIT_COMMIT
         // echo "${GIT_PREVIOUS_COMMIT}"
         // echo "${env.GIT_BRANCH}"
         // echo "${GIT_URL}"
