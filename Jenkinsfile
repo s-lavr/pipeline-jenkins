@@ -7,10 +7,8 @@ node {
     } else {
         echo "Image tag is ${env.GIT_BRANCH}"
     }
-    when { tag "*" }
-    steps{
+    sh "git tag"
     echo 'Test message'
-    }
     }
 }
 
