@@ -4,15 +4,9 @@ node {
     stage('Example') {
     if (env.GIT_BRANCH == 'master') {
         echo "Image tag is ${env.GIT_BRANCH}-${env.GIT_COMMIT}"
-    } else {
+    } elif (env.TAG_NAME!=null) {
+        echo "Hello, Tag exists, it's ${env.TAG_NAME}"
+    }
+    else {
         echo "Image tag is ${env.GIT_BRANCH}"
     }
-    sh "git tag"
-    if (env.TAG_NAME!=null){
-    echo "Hello, Tag exists"
-    }
-    echo 'Test message 123'
-    }
-}
-
-
