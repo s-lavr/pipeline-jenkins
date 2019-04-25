@@ -8,7 +8,7 @@ node {
         echo "Image tag is ${env.GIT_BRANCH}"
     }
     sh "git tag"
-    echo 'Test message'
+    echo 'Test message 123'
     }
 }
 
