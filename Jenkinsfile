@@ -11,7 +11,7 @@ node {
 
         echo "Test message"
         sh 'printenv'
-        echo "$GIT_COMMIT"
+        echo "${env.GIT_COMMIT}"
         // echo "${GIT_PREVIOUS_COMMIT}"
         // echo "${env.GIT_BRANCH}"
         // echo "${GIT_URL}"
