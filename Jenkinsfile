@@ -1,6 +1,5 @@
 node {
-    def env = checkout scm
-    echo env.GIT_COMMIT
+    checkout(scm).each { k,v -> env.setProperty(k, v) }
     sh 'printenv'
 }
 
